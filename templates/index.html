@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>File Converter</title>
+    <link rel="icon" href="../static/images/favicon.ico" type="image/ico" sizes="16x16">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+
+<body>
+    <div class="frame">
+        <div class="center">
+            <div class="bar"></div>
+            <div class="title">Click to upload file</div>
+            <form id="file_form" method="POST" action="uploads" name="file_form" enctype="multipart/form-data">
+                <input type="file" name="file" class="input">
+                <input type="submit" value="upload">
+            </form>
+        </div>
+    </div>
+	<a href="remove"  style="text-align:center;font-weight:bold;box-shadow:0px 0px 10px 5px red;border-radius:10px;width: 15vw;font-size: 1.2vw; background:tomato;padding:5px;margin:10px;display:inline-block;"> REMOVE ALL FILES </a>
+	
+	<a href="result"><button type="button" class="upload-btn" style="width: 30vw;font-size: 2vw;"><span>RESULT</span></button></a> 
+	
+    </div>
+    <script src='../static/js/jquery.min.js'></script>
+    <script src="../static/js/index.js"></script>
+</body>
+
+</html>
